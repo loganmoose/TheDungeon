@@ -35,12 +35,12 @@ public class theDungon {
 
 	}
 
-	static void makeWalls(char[][] a, char top, char bottom, char leftWall, char rightWall ) {
+	static void makeWalls(char[][] a) {
 
-		 top = '■';
-		 bottom = '■';
-		 leftWall = '■';
-		 rightWall = '■';
+		char top = '_';
+		char bottom = '�';
+		char leftWall = '/';
+		char rightWall = '/';
 		
 		for (int i = 0; i < 8; i++) {
 			a[0][i] = leftWall;
