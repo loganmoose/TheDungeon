@@ -3,7 +3,11 @@ public class theDungon {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		levelInit();
+		
+	}
 
+	public static void levelInit(){
 		move moverr = new move();
 		moverr.setup(3, 3);
 
@@ -24,7 +28,7 @@ public class theDungon {
 
 		}
 	}
-
+	
 	public static void Setcharacter(char[][] a) {
 
 		a[move.playerX][move.playerY] = '@';
