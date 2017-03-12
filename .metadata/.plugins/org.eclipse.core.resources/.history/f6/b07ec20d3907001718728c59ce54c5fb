@@ -18,7 +18,7 @@ public class theDungon {
 
 			char[][] map = new char[8][8];
 
-			makeWalls(map, '■', '■', '■', '■' );
+			makeWalls(map, '9', '■', '■', '■' );
 
 			moverr.directon(move.playerX, move.playerY);
 
