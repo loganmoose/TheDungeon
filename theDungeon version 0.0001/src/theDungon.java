@@ -6,6 +6,15 @@ public class theDungon {
 		levelInit();
 		
 	}
+	
+//☺ ☻
+//	♣ ♠ ♥
+//	∩
+	//♀
+	//¥
+	//☼
+	//°
+	//░
 
 	public static void levelInit(){
 		move moverr = new move();
@@ -31,7 +40,7 @@ public class theDungon {
 	
 	public static void Setcharacter(char[][] a) {
 
-		a[move.playerX][move.playerY] = '@';
+		a[move.playerX][move.playerY] = '☺';
 
 	}
 
@@ -65,7 +74,7 @@ public class theDungon {
 
 		for (int i = 0; i < 8; i++) {
 
-			System.out.print(a[i][0] + " ");
+			System.out.print(a[i][0] + "░");
 
 		}
 
@@ -73,22 +82,14 @@ public class theDungon {
 
 		for (int i = 0; i < 8; i++) {
 
-			System.out.print(a[i][1] + " ");
+			System.out.print(a[i][1] + "░");
 
 		}
 		System.out.println("");
 
 		for (int i = 0; i < 8; i++) {
 
-			System.out.print(a[i][2] + " ");
-
-		}
-
-		System.out.println("");
-
-		for (int i = 0; i < 8; i++) {
-
-			System.out.print(a[i][3] + " ");
+			System.out.print(a[i][2] + "░");
 
 		}
 
@@ -96,28 +97,36 @@ public class theDungon {
 
 		for (int i = 0; i < 8; i++) {
 
-			System.out.print(a[i][4] + " ");
+			System.out.print(a[i][3] + "░");
+
+		}
+
+		System.out.println("");
+
+		for (int i = 0; i < 8; i++) {
+
+			System.out.print(a[i][4] + "░");
 
 		}
 		System.out.println("");
 
 		for (int i = 0; i < 8; i++) {
 
-			System.out.print(a[i][5] + " ");
+			System.out.print(a[i][5] + "░");
 
 		}
 		System.out.println("");
 
 		for (int i = 0; i < 8; i++) {
 
-			System.out.print(a[i][6] + " ");
+			System.out.print(a[i][6] + "░");
 
 		}
 		System.out.println("");
 
 		for (int i = 0; i < 8; i++) {
 
-			System.out.print(a[i][7] + " ");
+			System.out.print(a[i][7] + "░");
 
 		}
 
