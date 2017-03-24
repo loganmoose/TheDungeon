@@ -6,6 +6,12 @@ public class move {
 	public static int playerY;
 	
 	
+	public static int minWallX = 0;
+	public static int minWallY = 0;
+	
+	public static int maxWallX = 7;
+	public static int maxWallY = 7;
+	
 	public static int object1X;
 	public static int object1Y;
 
@@ -31,6 +37,15 @@ public class move {
 		if (choice.equals(up)) {
 
 			move.playerY = move.playerY - step;
+			
+			if(move.playerY - step < minWallY){
+				move.playerY = move.playerY + 1;
+			}
+			else 
+			{
+				
+			}
+			
 
 		}
 
@@ -38,18 +53,39 @@ public class move {
 
 			move.playerY = move.playerY + step;
 
+			
+			if(move.playerY + step > maxWallY){
+				move.playerY = move.playerY - 1;
+			}
+			else 
+			{
+				
+			}
 		}
 
 		if (choice.equals(left)) {
 
 			move.playerX = move.playerX + step;
-
+			if(move.playerX + step > maxWallX ){
+				move.playerX = move.playerX - 1;
+			}
+			else{
+				
+			}
+			
 		}
 
 		else if (choice.equals(right)) {
 
 			move.playerX = move.playerX - step;
-
+			if(move.playerX - step < minWallX ){
+				move.playerX = move.playerX + 1;
+			}
+			else{
+				
+			}
+			
+			
 		}
 
 		if (choice.equals(gibby)) {
