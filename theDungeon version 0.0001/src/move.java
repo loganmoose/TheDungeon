@@ -9,12 +9,17 @@ public class move {
 	public static int minWallX = 0;
 	public static int minWallY = 0;
 	
-	public static int maxWallX = 7;
-	public static int maxWallY = 7;
+	public static int maxWallX = 13;
+	public static int maxWallY = maxWallX;
 	
 	public static int object1X;
 	public static int object1Y;
 
+	public void setDefaultDoor(int xpos, int ypos){
+		move.object1X = xpos;
+		move.object1Y = ypos;
+	}
+	
 	public void setup(int xpos, int ypos) {
 
 		xpos = 3;

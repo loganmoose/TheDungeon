@@ -1,7 +1,7 @@
 
 public class Position {
 
-	public static void check(){
+	public static void checkForDoor(){
 		
 	}
 }
