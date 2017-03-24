@@ -4,6 +4,10 @@ public class move {
 
 	public static int playerX;
 	public static int playerY;
+	
+	
+	public static int object1X;
+	public static int object1Y;
 
 	public void setup(int xpos, int ypos) {
 

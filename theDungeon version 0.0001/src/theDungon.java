@@ -1,9 +1,12 @@
 
 public class theDungon {
 
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		levelInit();
+		
 		
 	}
 	
@@ -22,34 +25,51 @@ public class theDungon {
 
 		move.playerX = 3;
 		move.playerY = 3;
+		
+		
+		move.object1X =  7 ;
+		move.object1Y = 6;
 
 		while (true) {
-
+			Messagebox m = new Messagebox();
+			m.printBox("TRUMP VACATION IN RUSSIA", 1);
 			char[][] map = new char[8][8];
 
 			makeWalls(map, '■', '■', '■', '■' );
 
-			moverr.directon(move.playerX, move.playerY);
-
-			Setcharacter(map);
+			setEntity(map);
+			
 
 			printMap(map);
+			
+			moverr.directon(move.playerX, move.playerY);
+
+			
 
 		}
 	}
 	
-	public static void Setcharacter(char[][] a) {
+	
+	
+	public static void setEntity(char[][] a) {
 
-		a[move.playerX][move.playerY] = '☺';
+		a[move.playerX][move.playerY] = '☺'; //character pos
+
+		a[move.object1X][move.object1Y] = '|'; // object in room 
+	}
+	
+	public static void SetObject(char[][] a) {
+
+		
 
 	}
 
 	static void makeWalls(char[][] a, char top, char bottom, char leftWall, char rightWall ) {
 
-		 top = '■';
-		 bottom = '■';
-		 leftWall = '■';
-		 rightWall = '■';
+		// top = '■';
+		// bottom = '■';
+		// leftWall = '■';
+	//	 rightWall = '■';
 		
 		for (int i = 0; i < 8; i++) {
 			a[0][i] = leftWall;

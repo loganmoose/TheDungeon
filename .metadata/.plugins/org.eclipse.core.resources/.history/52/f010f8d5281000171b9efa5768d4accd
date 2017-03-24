@@ -1,0 +1,10 @@
+
+public class Messagebox {
+public void printBox(String Message, int format){
+	
+	String msg = "/DEFAULT/MESSAGE";
+	System.out.println("+■■■■■■■■■■■■■■■■■■■■+");
+	System.out.println("| "+ msg + " |");
+	System.out.println("+■■■■■■■■■■■■■■■■■■■■+");
+}
+}

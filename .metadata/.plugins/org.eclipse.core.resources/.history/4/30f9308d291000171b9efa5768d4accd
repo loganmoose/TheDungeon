@@ -1,0 +1,10 @@
+
+public class Messagebox {
+public void printBox(String Message, int format){
+	
+	int msgLength = Message.length();
+	System.out.println("+■■■■■■■■■■■■■■■■■■■■+");
+	System.out.println("| "+ Message + msgLength + " |");
+	System.out.println("+■■■■■■■■■■■■■■■■■■■■+");
+}
+}
